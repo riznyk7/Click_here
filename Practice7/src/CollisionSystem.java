@@ -27,9 +27,8 @@ public class CollisionSystem {
 		StdDraw.line(0, 0, 0, 1);
 		StdDraw.line(1, 0, 1, 1);
 		StdDraw.line(0, 1, 1, 1);
-		for (int i = 0; i < particles.length; i++) {
+		for (int i = 0; i < particles.length; i++) 
 			particles[i].draw();
-		}
 		StdDraw.show(50);
 		pq.insert(new Event(t + 2, null, null));
 	}
